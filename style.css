@@ -1,0 +1,71 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  /* style.css */
+
+
+  /* 既存の @keyframes は省略 */
+
+/* アニメーションを適用するクラスを定義 */
+.animated-image {
+    animation: fadeIn 1s ease-in-out, zoomIn 0.5s ease-in-out;
+  }
+  
+/* 他のスタイルは省略 */
+
+/* フェードインアニメーション */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* アニメーションを1秒間で実行し、終了時に透明度を保持 */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+ /* 他のスタイルは省略 */
+
+/* メニューアイコンのスタイル */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  /* メニューが表示される際のスタイル */
+  .menu-open {
+    display: block;
+  }
+  
+  /* メニューが非表示になる際のスタイル */
+  .menu-close {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  

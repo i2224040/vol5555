@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- 追加 -->
+</head>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2.62;
+            margin: 0;
+            padding: 0;
+        }
+            
+
+        header {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project h4 {
+            margin-top: 1rem;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .project p {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* メディアクエリ */
+        @media (max-width: 800px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .animated-image {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* マウスが画像上に来た時のズーム用クラスを定義 */
+        .zoomed-image {
+            transform: scale(1.1);
+        }  
+       </style>
+        <script src="script.js"></script> <!-- 追加 -->
+</head>
+<body>
+ 
+    <header>
+        <nav>
+      
+            <strong>土屋結季のポートフォリオ</strong>
+            
+               <a href="https://www.instagram.com/y.uki_04/?igshid=MmIzYWVlNDQ5Yg%3D%3D" class="secondary">💌</a>
+        
+        </nav>
+         
+    </header>
+    <div class="container">
+      <div class="project">
+        <h4>Project 1:私のWebサイト</h4>
+        <a href="https://int.t-kougei.ac.jp/web1b_a/last/LastKadai/">
+          <img src="01.jpg" alt="Project 1" class="animated-image" class="fade-in">
+        </a>
+        <p>Webの授業で制作した自己紹介サイト</p>
+      </div>
+      <div class="project">
+        <h4>Project 2:CGスライム</h4>
+        <a href="https://youtu.be/2OD3_g31aJI">
+          <img src="02.jpg" alt="Project 2" class="animated-image" class="fade-in">
+        </a>
+        <p>CG演習でUnityを使って制作したスライム</p>
+      </div>
+      <div class="project">
+        <h4>Project 3:#春からIM</h4>
+        <a href="https://www.youtube.com/watch?v=A-tTKgVoSYQ">
+          <img src="06.jpg" alt="Project 6" class="animated-image" class="fade-in">
+        </a>
+        <p>映像演習で制作したショートビデオ</p>
+      </div>
+    
+      <!-- 以下に残りの写真のproject要素も同様にanimated-imageクラスを追加する -->
+    
+      <div class="project">
+        <h4>Project 4:ホテルアプリ</h4>
+        <a href="https://www.figma.com/proto/52MvNXOFEfDXwo29xjRevN/i2224040?type=design&node-id=20-370&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A370&mode=design&authuser=0">
+          <img src="04.jpg" alt="Project 4" class="animated-image" class="fade-in">
+        </a>
+        <p>Figmaで作ったTPUホテルアプリ</p>
+      </div>
+      <div class="project">
+        <h4>Project 5:Unity1 庭の池</h4>
+        <a href="https://drive.google.com/file/d/1N6_tVOsuW3m-g3RxE0mUTXgRvrhkPWro/view?usp=drive_link">
+          <img src="05.jpg" alt="Project 5" class="animated-image"class="fade-in">
+        </a>
+        <p>Unityで制作したクリックするとランダムでTimelimeが再生されるアニメーション</p>
+      </div>
+      <div class="project">
+        <h4>Project 6:Unity2 触れる</h4>
+        <a href="https://drive.google.com/file/d/1rhusXWExDSUUJTjPWtBrRoy5DmHHdkBp/view">
+          <img src="03.jpg" alt="Project 3" class="animated-image" class="fade-in">
+        </a>
+        <p>Unityで制作した触れるアニメーション</p>
+      </div>
+    </div>
+    
